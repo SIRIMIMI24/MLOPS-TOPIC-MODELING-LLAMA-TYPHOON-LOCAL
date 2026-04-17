@@ -1,0 +1,18 @@
+1. Create venv -> python -m venv venv
+2. activate venv -> venv\Scripts\activate
+3. instaill libraries -> pip install -e .
+
+# Deactivate if active
+deactivate
+
+# Remove the broken venv
+Remove-Item -Recurse -Force venv
+
+# Recreate it
+python -m venv venv
+
+# Activate
+venv\Scripts\activate
+
+# Install your package
+pip install -e .
